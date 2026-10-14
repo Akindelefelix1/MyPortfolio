@@ -1,0 +1,16 @@
+import { About } from '../components/sections/About'
+import { PageHero } from '../components/ui/PageHero'
+
+export function AboutPage() {
+  return (
+    <>
+      <PageHero
+        index="02"
+        eyebrow="Profile"
+        title="Technical depth. Leadership clarity."
+        description="I connect product thinking, software architecture, and hands-on engineering to help teams deliver dependable digital products."
+      />
+      <About />
+    </>
+  )
+}

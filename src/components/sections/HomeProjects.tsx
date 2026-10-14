@@ -18,13 +18,11 @@ export function HomeProjects() {
           <Reveal key={project.id} delay={index * 45} className="portfolio-project-reveal">
             <article className={`portfolio-project-card ${project.accent}`}>
               <div className="portfolio-project-visual">
-                {project.coverImage ? (
-                  <img src={project.coverImage} alt={project.coverAlt ?? ''} />
-                ) : (
-                  <div className="portfolio-project-placeholder" aria-hidden="true">
-                    <span>Selected work</span><strong>{project.title}</strong>
-                  </div>
-                )}
+                <div className="portfolio-project-placeholder" aria-hidden="true">
+                  <span>Selected work / {project.number}</span>
+                  <strong>{project.title}</strong>
+                  <small>{project.category}</small>
+                </div>
               </div>
               <div className="portfolio-project-copy">
                 <div className="portfolio-project-meta"><span>{project.category}</span><span>{project.year}</span></div>
@@ -53,10 +51,15 @@ export function HomeProjects() {
             <Reveal key={`${item.company}-${item.period}`} delay={index * 30}>
               <article className="career-entry">
                 <div className="career-marker" aria-hidden="true" />
-                <p className="career-period">{item.period}</p>
+                <p className="career-period"><span>Timeline</span>{item.period}</p>
                 <div className="career-content">
-                  <p className="career-company">{item.company}</p>
-                  <h3>{item.role}</h3>
+                  <div className="career-content-heading">
+                    <div>
+                      <p className="career-company">{item.company}</p>
+                      <h3>{item.role}</h3>
+                    </div>
+                    <span className="career-index">{String(index + 1).padStart(2, '0')}</span>
+                  </div>
                   <p className="career-summary">{item.summary}</p>
                   <ul>{item.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>
                 </div>

@@ -24,7 +24,7 @@ export function HomeProjects() {
               <div className="portfolio-project-visual">
                 <div className="portfolio-project-placeholder" aria-hidden="true">
                   <span>Selected work / {project.number}</span>
-                  <strong>{project.title}</strong>
+                  {project.logoImage ? <img className="portfolio-project-logo" src={project.logoImage} alt="" /> : <strong>{project.title}</strong>}
                   <small>{project.category}</small>
                 </div>
               </div>

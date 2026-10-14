@@ -11,6 +11,7 @@ export interface Project {
   number: string
   coverImage?: string
   coverAlt?: string
+  logoImage?: string
 }
 
 export interface Experience {

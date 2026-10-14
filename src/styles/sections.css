@@ -304,6 +304,7 @@
 .portfolio-project-placeholder { position: relative; width: 100%; min-width: 0; min-height: 21rem; padding: clamp(1.5rem, 4vw, 3.5rem); display: flex; flex-direction: column; justify-content: space-between; background: radial-gradient(circle at 80% 15%, rgba(255,255,255,.42), transparent 40%); }
 .portfolio-project-placeholder span { font-size: .68rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .portfolio-project-placeholder strong { max-width: 90%; font: 400 clamp(3rem, 7vw, 7rem)/.85 Georgia, serif; letter-spacing: -.06em; }
+.portfolio-project-visual .portfolio-project-logo { display: block; width: min(68%, 24rem); height: auto; min-height: 0; max-height: 38%; margin: auto; object-fit: contain; filter: drop-shadow(0 1rem 1.5rem rgba(18,18,18,.16)); }
 .portfolio-project-placeholder small { max-width: 18rem; padding-top: 1rem; border-top: 1px solid rgba(23,33,29,.24); font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .portfolio-project-copy { min-width: 0; display: flex; flex-direction: column; justify-content: center; padding: clamp(1.25rem, 2.5vw, 2.75rem) clamp(.75rem, 1.6vw, 1.5rem); }
 .portfolio-project-meta { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .62rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
@@ -346,9 +347,15 @@
 .portfolio-cta a:hover { background: var(--ink); color: white; }
 
 @media (max-width: 900px) {
+  .portfolio-projects { grid-auto-rows: auto; }
+  .portfolio-project-reveal, .portfolio-project-card { height: auto; }
   .portfolio-project-card, .portfolio-project-reveal:nth-child(even) .portfolio-project-card { grid-template-columns: 1fr; min-height: 0; }
   .portfolio-project-reveal:nth-child(even) .portfolio-project-visual { order: initial; }
   .portfolio-project-visual, .portfolio-project-visual img, .portfolio-project-placeholder { min-height: 0; aspect-ratio: 16 / 10; }
+  .portfolio-project-placeholder { padding: 2.25rem 1.5rem 1.75rem; }
+  .portfolio-project-visual .portfolio-project-logo { width: 72%; max-height: 42%; }
+  .portfolio-project-placeholder strong { max-width: 100%; font-size: clamp(3rem, 13vw, 4.5rem); }
+  .portfolio-project-placeholder small { max-width: 100%; }
   .portfolio-project-card { min-height: 0; }
   .career-heading, .additional-leadership { grid-template-columns: 1fr; }
   .career-timeline::before { left: .3rem; }
@@ -370,6 +377,7 @@
   .portfolio-project-visual { border-radius: .8rem; }
   .portfolio-project-copy { padding: 1.5rem .8rem 1.75rem; }
   .portfolio-project-meta { align-items: flex-start; flex-direction: column; gap: .4rem; }
+  .portfolio-project-copy h2 { margin-top: 1.75rem; font-size: clamp(3rem, 13vw, 4.2rem); }
   .career-section { padding-inline: 1rem; }
   .career-entry { padding-left: 1.35rem; }
 }

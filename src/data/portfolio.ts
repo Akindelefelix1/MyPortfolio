@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 2, number: '02', title: 'CEDU', category: 'End-to-end educational platform', year: '2026',
     description: 'A family-centred learning and gaming platform connecting learner journeys, household controls, payments, rewards, content administration, and measurable progress.',
-    tags: ['React & TypeScript', 'Node & PostgreSQL', 'Render deployment'], href: 'https://cedu.cephassuite.com/login',
+    tags: ['React & TypeScript', 'Node & PostgreSQL', 'Render deployment'], href: 'https://cedu.cephassuite.com/login', logoImage: '/cedu-logo.png',
     accent: 'accent-blue', coverImage: '/cedu-cover.png',
     coverAlt: 'CEDU platform showing its educational games and structured learning experiences',
   },

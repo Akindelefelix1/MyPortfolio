@@ -7,6 +7,7 @@ export const profile = {
   email: 'akindelefelix1@gmail.com',
   phone: '+234 810 705 0824',
   phoneHref: '+2348107050824',
+  linkedin: 'https://www.linkedin.com/in/akindele-felix-idowu-0a682721b',
   availability: 'Available for technical partnerships',
   intro: 'I lead engineering teams and build secure, scalable mobile and software products—from architecture and APIs to polished user experiences.',
 }

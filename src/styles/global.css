@@ -43,7 +43,10 @@ body.menu-open { overflow: hidden; }
 .site-footer { padding: 1.75rem var(--gutter) 2.5rem; background: var(--ink); color: var(--paper); display: flex; justify-content: space-between; font-size: .72rem; border-top: 1px solid rgba(255,255,255,.14); }
 .site-footer p span { color: #8d8a83; }
 .site-footer-contact { display: flex; align-items: flex-start; gap: 2rem; }
+.site-footer-social { display: flex; flex-direction: column; gap: .2rem; }
 .site-footer-contact address { display: flex; flex-direction: column; gap: .2rem; font-style: normal; }
+.site-footer-social a, .site-footer-contact address a { display: inline-flex; align-items: center; gap: .4rem; }
+.contact-icon { width: 1rem; height: 1rem; flex: 0 0 auto; }
 .site-footer-contact a { color: inherit; }
 .page-enter { animation: page-enter .55s cubic-bezier(.2,.75,.2,1) both; }
 .page-hero { position: relative; min-height: 62svh; padding: clamp(5rem, 10vw, 10rem) var(--gutter) clamp(4rem, 8vw, 8rem); overflow: hidden; border-bottom: 1px solid var(--line); background: linear-gradient(135deg, var(--white) 0%, #f2eee3 58%, #e8eee8 100%); }

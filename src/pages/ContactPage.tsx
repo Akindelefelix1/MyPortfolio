@@ -6,6 +6,7 @@ export function ContactPage() {
     <>
       <PageHero
         index="04"
+        className="contact-page-hero"
         eyebrow="Contact"
         title="Good products begin with a clear conversation."
         description="I’m open to technical leadership, full-stack product development, architecture, and selected collaboration opportunities."

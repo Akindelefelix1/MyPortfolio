@@ -3,12 +3,14 @@ interface PageHeroProps {
   eyebrow: string
   title: string
   description: string
+  className?: string
 }
 
-export function PageHero({ eyebrow, title, description }: PageHeroProps) {
+export function PageHero({ index, eyebrow, title, description, className = '' }: PageHeroProps) {
   return (
-    <header className="page-hero">
+    <header className={`page-hero ${className}`}>
       <div className="page-hero-meta">
+        <span>{index}</span>
         <p>{eyebrow}</p>
       </div>
       <h1>{title}</h1>

@@ -13,7 +13,7 @@ export function HomeProjects() {
         </div>
         <div className="portfolio-signal" aria-hidden="true">
           <i /><i /><i />
-          <span>05 / 05</span>
+          <span>06 / 06</span>
         </div>
       </header>
 

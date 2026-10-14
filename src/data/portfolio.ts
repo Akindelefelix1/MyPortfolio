@@ -27,18 +27,23 @@ export const projects: Project[] = [
     coverAlt: 'CEDU platform showing its educational games and structured learning experiences',
   },
   {
-    id: 3, number: '03', title: 'OGFIMS', category: 'Government mobile services', year: 'Public sector',
+    id: 3, number: '03', title: 'HSG Texture', category: 'E-commerce textile platform', year: '2026',
+    description: 'A considered storefront for curated fabrics and accessories, combining product discovery, category browsing, customer accounts, favorites, shopping bag management, delivery details, and WhatsApp order confirmation.',
+    tags: ['E-commerce', 'Product catalogue', 'Orders & WhatsApp'], href: 'https://hsg-texture.onrender.com/', accent: 'accent-violet',
+  },
+  {
+    id: 4, number: '04', title: 'OGFIMS', category: 'Government mobile services', year: 'Public sector',
     description: 'A mobile experience supporting government service operations through payments, push notifications, multilingual access, and streamlined vendor-to-user interactions.',
     tags: ['Mobile', 'Payments', 'Localization'], href: 'https://ogunfarminfo.org/', accent: 'accent-lime',
     coverImage: '/ogfims-cover.png', coverAlt: 'OGFIMS homepage showing the Ogun State Farmers Information Management System',
   },
   {
-    id: 4, number: '04', title: 'Artisan Connect', category: 'Mobile services platform', year: '2023–25',
+    id: 5, number: '05', title: 'Artisan Connect', category: 'Mobile services platform', year: '2023–25',
     description: 'A mobile platform with integrated payments, real-time WebSocket communication, performance-focused architecture, and production releases across both major app stores.',
     tags: ['React Native', 'Paystack', 'WebSockets'], href: '/contact', accent: 'accent-violet',
   },
   {
-    id: 5, number: '05', title: 'Get-2-Know', category: 'Interactive quiz platform', year: '2024–25',
+    id: 6, number: '06', title: 'Get-2-Know', category: 'Interactive quiz platform', year: '2024–25',
     description: 'An engaging quiz experience with progress tracking, scoring, instant feedback, and real-time competitive modes for individuals and groups.',
     tags: ['Mobile Engineering', 'Real-time', 'Product Development'], href: '/contact', accent: 'accent-gold',
   },
@@ -77,6 +82,16 @@ export const experience: Experience[] = [
     ],
   },
   {
+    period: '2026', role: 'Full-Stack Software Developer / Technical Lead', company: 'CephasHR - Cephas ICT Hub',
+    summary: 'Built and coordinated delivery of a connected human-resources platform for workforce operations.',
+    highlights: [
+      'Developed recruitment, employee management, attendance, payroll, performance, and document workflow features.',
+      'Built reusable frontend and backend workflows for departments, positions, levels, branches, and employee records.',
+      'Integrated database, mail, and supporting services for dependable HR operations.',
+      'Aligned product requirements, technical delivery, testing, and maintainable production releases.',
+    ],
+  },
+  {
     period: '2026', role: 'Full-Stack Software Developer', company: 'CEDU - Cephas Educational Games',
     summary: 'Owned the learning platform across frontend, backend, database, integrations, and deployment.',
     highlights: [
@@ -84,6 +99,16 @@ export const experience: Experience[] = [
       'Developed backend APIs and PostgreSQL data workflows.',
       'Integrated transactional email and supporting services.',
       'Managed staging deployment and continued product delivery.',
+    ],
+  },
+  {
+    period: '2026', role: 'Full-Stack Developer', company: 'HSG Texture',
+    summary: 'Delivered an e-commerce storefront for curated fabrics, accessories, and customer orders.',
+    highlights: [
+      'Built product discovery across fabric collections, accessories, search, categories, and product detail views.',
+      'Implemented customer accounts, favorites, shopping bag, quantity management, and delivery detail flows.',
+      'Connected order recording with WhatsApp confirmation to support a human-centred purchasing experience.',
+      'Structured a responsive storefront that presents textile products clearly across mobile and desktop screens.',
     ],
   },
   {

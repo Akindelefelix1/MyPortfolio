@@ -6,10 +6,14 @@ export function HomeProjects() {
     <section className="portfolio-page" aria-labelledby="portfolio-title">
       <header className="portfolio-masthead">
         <p className="portfolio-eyebrow">Portfolio / Selected work and experience</p>
-        <h1 id="portfolio-title">Products shipped.<br /><em>Teams led.</em></h1>
+        <h1 id="portfolio-title"><span>Products shipped.</span><br /><em>Teams led.</em></h1>
         <div className="portfolio-masthead-bottom">
           <p>Full-stack platforms, mobile products, government services, and technical leadership across complex deliveries.</p>
           <a href="#experience">Explore experience <span aria-hidden="true">↓</span></a>
+        </div>
+        <div className="portfolio-signal" aria-hidden="true">
+          <i /><i /><i />
+          <span>05 / 05</span>
         </div>
       </header>
 
@@ -44,7 +48,7 @@ export function HomeProjects() {
       <section className="career-section" id="experience" aria-labelledby="experience-title">
         <div className="career-heading">
           <p>Professional experience</p>
-          <h2 id="experience-title">A record of hands-on engineering and accountable leadership.</h2>
+          <h2 id="experience-title">More of the work behind these highlights.</h2>
         </div>
         <div className="career-timeline">
           {experience.map((item, index) => (

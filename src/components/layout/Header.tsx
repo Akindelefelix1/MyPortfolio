@@ -28,7 +28,7 @@ export function Header() {
   return (
     <header className={`site-header ${pathname === '/' ? 'is-home' : ''} ${isScrolled ? 'is-scrolled' : ''}`}>
       <Link className="wordmark" to="/" aria-label={`${profile.name}, home`} onClick={() => setIsOpen(false)}>
-        IAF<span>.</span>
+        <img src="/idowu-akindele-felix.jpeg" alt="" aria-hidden="true" />
       </Link>
       <p className="header-role">Technical Lead<br />&amp; Full-Stack Developer</p>
       <button

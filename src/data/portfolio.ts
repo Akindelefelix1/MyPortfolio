@@ -16,7 +16,7 @@ export const projects: Project[] = [
     id: 1, number: '01', title: 'CephasHR', category: 'End-to-end product development', year: '2026',
     description: 'A connected human-resources platform for recruitment, employee management, attendance, payroll, performance, document workflows, and workforce operations.',
     tags: ['Full-stack development', 'Database', 'Mail services'], href: 'https://hr.cephasict.com/#/login',
-    overviewHref: 'https://cephas-suite.vercel.app/cephas-hr', accent: 'accent-coral', coverImage: '/cephashr-cover.png',
+    overviewHref: 'https://cephas-suite.vercel.app/people', accent: 'accent-coral', coverImage: '/cephashr-cover.png',
     coverAlt: 'CephasHR overview showing employee, level, position, department, and branch totals',
   },
   {
@@ -140,7 +140,7 @@ export const additionalLeadershipProjects = ['Flat Pad', 'Celma', 'Sound Map', '
 export const capabilities = [
   'Technical leadership & team management', 'Solution architecture & system design',
   'Mobile app development — React Native & Expo', 'Node.js — Express & NestJS', 'React',
-  'API integration & third-party services', 'Real-time systems & WebSockets', 'Software design & code review',
+  'API integration & third-party services', 'Payment gateway implementation', 'Real-time systems & WebSockets', 'Software design & code review',
   'Project planning & Agile execution', 'Version control — GitHub & SVN', 'CI/CD & version control',
   'Database optimization & profiling', 'Stakeholder communication & documentation',
 ]

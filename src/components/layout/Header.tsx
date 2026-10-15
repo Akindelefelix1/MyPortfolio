@@ -6,7 +6,6 @@ const links = [
   { label: 'About', to: '/about' },
   { label: 'Skills', to: '/skill' },
   { label: 'Portfolio', to: '/portfolio' },
-  { label: 'Contact me', to: '/contact' },
 ]
 
 export function Header() {

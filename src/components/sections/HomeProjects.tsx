@@ -22,11 +22,15 @@ export function HomeProjects() {
           <Reveal key={project.id} delay={index * 45} className="portfolio-project-reveal">
             <article className={`portfolio-project-card ${project.accent}`}>
               <div className="portfolio-project-visual">
-                <div className="portfolio-project-placeholder" aria-hidden="true">
-                  <span>Selected work / {project.number}</span>
-                  {project.logoImage ? <img className="portfolio-project-logo" src={project.logoImage} alt="" /> : <strong>{project.title}</strong>}
-                  <small>{project.category}</small>
-                </div>
+                {project.coverImage ? (
+                  <img className="portfolio-project-cover" src={project.coverImage} alt={project.coverAlt ?? ''} />
+                ) : (
+                  <div className="portfolio-project-placeholder" aria-hidden="true">
+                    <span>Selected work / {project.number}</span>
+                    {project.logoImage ? <img className="portfolio-project-logo" src={project.logoImage} alt="" /> : <strong>{project.title}</strong>}
+                    <small>{project.category}</small>
+                  </div>
+                )}
               </div>
               <div className="portfolio-project-copy">
                 <div className="portfolio-project-meta"><span>{project.category}</span><span>{project.year}</span></div>

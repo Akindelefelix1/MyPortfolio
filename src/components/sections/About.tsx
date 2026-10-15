@@ -19,6 +19,15 @@ export function About() {
           </p>
         </div>
       </Reveal>
+      <Reveal className="technical-skills">
+        <h3>Technical skills</h3>
+        <ul>
+          <li><strong>Languages:</strong> JavaScript, TypeScript, React, React Native, Node.js</li>
+          <li><strong>Tools:</strong> Asana, Jira, GitHub, SVN, WebSockets, Adobe Photoshop</li>
+          <li><strong>Practices:</strong> OOP, Software Architecture, Code Reviews, CI/CD</li>
+          <li><strong>Other:</strong> Leadership, Project Management, Prompt Engineering</li>
+        </ul>
+      </Reveal>
       <div className="credentials-grid">
         <Reveal>
           <div className="credential-block">

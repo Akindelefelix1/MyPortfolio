@@ -15,15 +15,15 @@ export const profile = {
 export const projects: Project[] = [
   {
     id: 1, number: '01', title: 'CephasHR', category: 'End-to-end product development', year: '2026',
-    description: 'A connected human-resources platform for recruitment, employee management, attendance, payroll, performance, document workflows, and workforce operations.',
-    tags: ['Full-stack development', 'Database', 'Mail services'], href: 'https://hr.cephasict.com/#/login',
+    description: 'A connected human-resources platform with organization onboarding, organization and staff dashboards, super-admin oversight, recruitment, employee management, attendance, payroll, performance, document workflows, and subscription-based plans.',
+    tags: ['React.js & TypeScript', 'Node.js & PostgreSQL', 'Payments & subscriptions', 'Rewards conversion'], href: 'https://hr.cephasict.com/#/login',
     overviewHref: 'https://cephas-suite.vercel.app/people', accent: 'accent-coral', coverImage: '/cephashr-cover.png',
     coverAlt: 'CephasHR overview showing employee, level, position, department, and branch totals',
   },
   {
     id: 2, number: '02', title: 'CEDU', category: 'End-to-end educational platform', year: '2026',
-    description: 'A family-centred learning and gaming platform connecting learner journeys, household controls, payments, rewards, content administration, and measurable progress.',
-    tags: ['React & TypeScript', 'Node & PostgreSQL', 'Render deployment'], href: 'https://cedu.cephassuite.com/login', logoImage: '/cedu-logo.png',
+    description: 'A family-centred learning and gaming platform with integrated payments, points-to-airtime conversion, parental account controls, dedicated user and admin dashboards, and a reusable asset and resources bank for scalable content delivery.',
+    tags: ['React.js & TypeScript', 'Node.js & PostgreSQL', 'Payments & rewards', 'Parental controls'], href: 'https://cedu.cephassuite.com/login', logoImage: '/cedu-logo.png',
     accent: 'accent-blue', coverImage: '/cedu-cover.png',
     coverAlt: 'CEDU platform showing its educational games and structured learning experiences',
   },
@@ -31,6 +31,7 @@ export const projects: Project[] = [
     id: 3, number: '03', title: 'HSG Texture', category: 'E-commerce textile platform', year: '2026',
     description: 'A considered storefront for curated fabrics and accessories, combining product discovery, category browsing, customer accounts, favorites, shopping bag management, delivery details, and WhatsApp order confirmation.',
     tags: ['E-commerce', 'Product catalogue', 'Orders & WhatsApp'], href: 'https://hsg-texture.onrender.com/', accent: 'accent-violet',
+    coverImage: '/hsg-texture-cover.png', coverAlt: 'HSG Texture storefront showcasing folded blue, gold, white, orange, and patterned fabrics',
   },
   {
     id: 4, number: '04', title: 'OGFIMS', category: 'Government mobile services', year: 'Public sector',
@@ -51,6 +52,28 @@ export const projects: Project[] = [
 ]
 
 export const experience: Experience[] = [
+  {
+    period: '2026', role: 'Full-Stack Software Developer / Technical Lead', company: 'CephasHR - Cephas ICT Hub',
+    summary: 'Built and coordinated delivery of a multi-organization human-resources platform for workforce operations and subscription management.',
+    highlights: [
+      'Implemented organization onboarding with organization, staff, and super-admin dashboards for clear role-based workflows.',
+      'Built HR workflows for recruitment, employee records, attendance, payroll, performance, and document management.',
+      'Integrated organization plan subscriptions and payment flows to support scalable access across customer organizations.',
+      'Developed productivity-to-points earning and points-to-airtime and data conversion features as part of the rewards experience.',
+      'Delivered the platform with React.js, TypeScript, Node.js, and PostgreSQL using reusable, maintainable production workflows.',
+    ],
+  },
+  {
+    period: '2026', role: 'Full-Stack Software Developer', company: 'CEDU - Cephas Educational Games',
+    summary: 'Owned the learning platform across product design, frontend, backend, integrations, and deployment.',
+    highlights: [
+      'Built learner and administration experiences with React and TypeScript, supported by dedicated user and admin dashboards.',
+      'Integrated payments and points-to-airtime conversion to support the platform’s rewards experience.',
+      'Implemented parental account controls for safer, more flexible household management.',
+      'Created a reusable asset and resources bank to support efficient content delivery and future product expansion.',
+      'Delivered the platform with React.js, TypeScript, Node.js, and PostgreSQL across frontend, backend, and data workflows.',
+    ],
+  },
   {
     period: 'July 2025 - November 2025', role: 'Project Team Lead / Technical Coordinator', company: 'Providus Bank - Contract',
     summary: 'Coordinated a cross-functional banking delivery from planning through launch.',
@@ -80,26 +103,6 @@ export const experience: Experience[] = [
       'Conducted unit, integration, and system testing for reliable product delivery.',
       'Collaborated with cross-functional teams to align execution with product vision and business goals.',
       'Delivered clean, maintainable, long-term scalable code.',
-    ],
-  },
-  {
-    period: '2026', role: 'Full-Stack Software Developer / Technical Lead', company: 'CephasHR - Cephas ICT Hub',
-    summary: 'Built and coordinated delivery of a connected human-resources platform for workforce operations.',
-    highlights: [
-      'Developed recruitment, employee management, attendance, payroll, performance, and document workflow features.',
-      'Built reusable frontend and backend workflows for departments, positions, levels, branches, and employee records.',
-      'Integrated database, mail, and supporting services for dependable HR operations.',
-      'Aligned product requirements, technical delivery, testing, and maintainable production releases.',
-    ],
-  },
-  {
-    period: '2026', role: 'Full-Stack Software Developer', company: 'CEDU - Cephas Educational Games',
-    summary: 'Owned the learning platform across frontend, backend, database, integrations, and deployment.',
-    highlights: [
-      'Built learner and administration experiences with React and TypeScript.',
-      'Developed backend APIs and PostgreSQL data workflows.',
-      'Integrated transactional email and supporting services.',
-      'Managed staging deployment and continued product delivery.',
     ],
   },
   {

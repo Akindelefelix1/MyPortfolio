@@ -1,5 +1,6 @@
 import { profile } from '../../data/portfolio'
 import { ContactIcon } from '../ui/ContactIcon'
+import { CvBuilder } from './CvBuilder'
 
 export function Contact() {
   return (
@@ -32,6 +33,7 @@ export function Contact() {
         </div>
       </div>
       <div className="contact-orbit" aria-hidden="true"><span>Say hello · Start a project · </span></div>
+      <CvBuilder />
     </section>
   )
 }
